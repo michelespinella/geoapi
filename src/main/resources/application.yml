@@ -1,0 +1,22 @@
+spring:
+    datasource:
+        driver-class-name: oracle.jdbc.OracleDriver
+        password: geodbadmin
+        url: jdbc:oracle:thin:@localhost:1521/XE
+        username: geodbadmin
+    jpa:
+        database-platform: org.hibernate.dialect.Oracle10gDialect
+        hibernate:
+            ddl-auto: update
+server:
+    servlet:
+        context-path: /api/v1
+drees:
+    stacktrace: 'true'
+kc:
+    auth:
+        uri: https://app.please-open.it/auth/realms/99456d8c-0d88-4fc7-ae3f-c405057044db/protocol/openid-connect/token
+        client: geoapi-client
+        realm: 99456d8c-0d88-4fc7-ae3f-c405057044db
+        secret: MwuItZw4F0hKY9undW4kinUIxOfGRX3y
+        issuerUri: https://app.please-open.it/auth/realms/99456d8c-0d88-4fc7-ae3f-c405057044db
